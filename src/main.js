@@ -11,7 +11,7 @@ const headerHTML = `
                 <div class="flex items-center gap-8">
                     <!-- Logo -->
                     <a href="/" class="flex-shrink-0">
-                        <img src="/images/logo-full.jpg" alt="Blubloom Interiors" class="h-24 w-auto">
+                        <img src="/images/logo-full.jpg" alt="Blubloom Interiors" class="h-12 md:h-24 w-auto">
                     </a>
                     
                     <!-- Top Links -->
