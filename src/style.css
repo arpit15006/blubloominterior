@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* Hide video controls */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
 @theme {
   --color-primary: #2D2D2D;
   --color-secondary: #C5A059;

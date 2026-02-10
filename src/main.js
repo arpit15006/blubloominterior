@@ -233,3 +233,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+// Force video autoplay on iOS/Mobile
+document.addEventListener('DOMContentLoaded', () => {
+  const video = document.querySelector('video');
+  if (video) {
+    video.muted = true;
+    video.play().catch(error => {
+      console.log("Video autoplay failed:", error);
+    });
+  }
+});
