@@ -134,7 +134,7 @@ const footerHTML = `
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
       <!-- Brand -->
       <div class="col-span-1 md:col-span-2">
-        <h3 class="font-playfair text-3xl font-bold mb-6">BLUBLOOM.</h3>
+        <h3 class="font-playfair text-3xl font-bold mb-6 text-white">BLUBLOOM.</h3>
         <p class="text-gray-400 font-light max-w-sm mb-8">
           Crafting exceptional spaces that inspire and delight. Luxury interior design and architectural services for the modern lifestyle.
         </p>
@@ -148,7 +148,7 @@ const footerHTML = `
 
       <!-- Links -->
       <div>
-        <h4 class="font-playfair text-xl mb-6">Quick Links</h4>
+        <h4 class="font-playfair text-xl mb-6 text-white">Quick Links</h4>
         <ul class="space-y-4 font-light text-gray-400">
           <li><a href="/gallery.html" class="hover:text-secondary transition-colors">Design Gallery</a></li>
           <li><a href="/services.html" class="hover:text-secondary transition-colors">Services</a></li>
@@ -160,7 +160,7 @@ const footerHTML = `
 
       <!-- Contact -->
       <div>
-        <h4 class="font-playfair text-xl mb-6">Contact</h4>
+        <h4 class="font-playfair text-xl mb-6 text-white">Contact</h4>
         <ul class="space-y-4 font-light text-gray-400">
           <li>123 Luxury Lane, Suite 100<br>New Delhi, India</li>
           <li><a href="mailto:hello@blubloom.com" class="hover:text-secondary">hello@blubloom.com</a></li>
@@ -177,39 +177,59 @@ const footerHTML = `
 `;
 
 // Inject Header and Footer
+// Initialize App
 document.addEventListener('DOMContentLoaded', () => {
+  // Inject Header and Footer
   const headerPlaceholder = document.getElementById('header-placeholder');
   const footerPlaceholder = document.getElementById('footer-placeholder');
 
   if (headerPlaceholder) headerPlaceholder.innerHTML = headerHTML;
   if (footerPlaceholder) footerPlaceholder.innerHTML = footerHTML;
 
-  // Mobile Menu Logic
-  const menuBtn = document.getElementById('mobile-menu-btn');
-  const closeBtn = document.getElementById('close-menu-btn');
+  // Header Logic
+  const header = document.getElementById('main-header');
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const closeMenuBtn = document.getElementById('close-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', () => {
+  // Check if page requested transparent nav
+  const isTransparentPage = document.body.classList.contains('transparent-nav');
+
+  // Initial State for Transparent Header
+  if (header && isTransparentPage && window.scrollY < 50) {
+    header.classList.add('header-transparent');
+    header.classList.remove('bg-white', 'shadow-sm');
+  }
+
+  // Scroll Effect
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        // Scrolled State (Always Standard)
+        header.classList.add('bg-white', 'shadow-sm');
+        header.classList.remove('header-transparent', 'py-4'); // Remove py-4 if valid, though not in original
+      } else {
+        // Top State
+        if (isTransparentPage) {
+          header.classList.add('header-transparent');
+          header.classList.remove('bg-white', 'shadow-sm');
+        } else {
+          header.classList.remove('shadow-sm');
+        }
+      }
+    });
+  }
+
+  // Mobile Menu Toggle
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.remove('translate-x-full');
     });
   }
 
-  if (closeBtn && mobileMenu) {
-    closeBtn.addEventListener('click', () => {
+  if (closeMenuBtn && mobileMenu) {
+    closeMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.add('translate-x-full');
-    });
-  }
-
-  // Scroll Effect for Header
-  const header = document.getElementById('main-header');
-  if (header) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('shadow-md', 'py-0');
-      } else {
-        header.classList.remove('shadow-md');
-      }
     });
   }
 });

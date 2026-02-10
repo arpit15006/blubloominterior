@@ -28,6 +28,42 @@
   .section-padding {
     @apply py-20 lg:py-32;
   }
+
+  /* Transparent Header State */
+  .header-transparent {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .header-transparent .border-b {
+    border-color: transparent !important;
+  }
+
+  /* Force text white for all links and specific containers - using high specificity */
+  .header-transparent a,
+  .header-transparent button,
+  .header-transparent .text-gray-800,
+  .header-transparent .text-gray-700,
+  .header-transparent .text-gray-600 {
+    color: white !important;
+  }
+
+  /* Hover states */
+  .header-transparent a:hover,
+  .header-transparent button:hover {
+    color: #e5e7eb !important;
+    /* gray-200 */
+  }
+
+  /* SVG icons */
+  .header-transparent svg {
+    color: white !important;
+  }
+
+  /* Logo adaptation: Force white */
+  .header-transparent img {
+    filter: brightness(0) invert(1) !important;
+  }
 }
 
 /* Custom Scrollbar */
