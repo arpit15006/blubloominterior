@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Magazine | Blubloom Interiors</title>
+    <meta name="description"
+        content="Stay updated with the latest interior design trends, tips, and inspiration from Blubloom Interiors.">
+    <link rel="stylesheet" href="/src/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-body text-gray-800 antialiased bg-white selection:bg-[#eb595f] selection:text-white pb-16">
+
+    <!-- Header (Injected via main.js) -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <div class="bg-[#fdfbf7] py-20 border-b border-gray-100">
+        <div class="container-custom mx-auto px-4 text-center">
+            <!-- Breadcrumbs -->
+            <nav class="flex justify-center mb-8" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3 text-sm font-medium text-gray-500">
+                    <li class="inline-flex items-center">
+                        <a href="/" class="hover:text-[#eb595f] transition-colors">Home</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <span class="mx-2">/</span>
+                            <span class="text-gray-800">magazine</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+
+            <span class="text-[#eb595f] font-bold tracking-wider text-xs uppercase mb-3 block">The Journal</span>
+            <h1 class="text-4xl md:text-6xl font-playfair font-bold text-[#2D2D2D] mb-6">Design Magazine</h1>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed font-light">
+                Stories, ideas, and inspiration for living well. Explore the latest trends and expert advice from our
+                design team.
+            </p>
+        </div>
+    </div>
+
+    <!-- Featured Article (Large) -->
+    <div class="container-custom mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div class="overflow-hidden rounded-xl shadow-md h-[400px]">
+                <img src="/images/magazine-featured.png" alt="Featured Article"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+            </div>
+            <div>
+                <span class="text-[#eb595f] font-semibold text-xs uppercase tracking-wide mb-2 block">Trends
+                    Report</span>
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold text-[#2D2D2D] mb-4 leading-tight">
+                    <a href="#" class="hover:text-[#eb595f] transition-colors">Embracing Warm Neutrals: The Color
+                        Palette of 2025</a>
+                </h2>
+                <p class="text-gray-500 mb-6 leading-relaxed">
+                    Move over stark grays. The new year brings a shift towards cozy, earthy tones that ground us and
+                    bring warmth back into our homes. Discover how to style these versatile shades.
+                </p>
+                <div class="flex items-center gap-4 text-sm text-gray-400">
+                    <span>By Sarah Jenkins</span>
+                    <span>&bull;</span>
+                    <span>5 min read</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest Articles Grid -->
+        <h3 class="text-2xl font-playfair font-bold text-[#2D2D2D] mb-8 border-b border-gray-100 pb-4">Latest Stories
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Article 1 -->
+            <article class="flex flex-col group">
+                <div class="overflow-hidden rounded-lg mb-4 h-60 bg-gray-100">
+                    <img src="https://placehold.co/600x400/e2e8f0/475569?text=Biophilic+Design" alt="Biophilic Design"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-1">
+                    <span class="text-xs font-bold text-[#eb595f] uppercase tracking-wide mb-1 block">Wellness</span>
+                    <h4
+                        class="text-xl font-playfair font-bold text-[#2D2D2D] mb-2 group-hover:text-[#eb595f] transition-colors">
+                        <a href="#">Bringing Opsourdoors In: A Guide to Biophilic Design</a>
+                    </h4>
+                    <p class="text-gray-500 text-sm line-clamp-3 mb-4">
+                        How to use plants, natural light, and organic materials to create a healthier, happier home
+                        environment.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="flex flex-col group">
+                <div class="overflow-hidden rounded-lg mb-4 h-60 bg-gray-100">
+                    <img src="https://placehold.co/600x400/e2e8f0/475569?text=Small+Spaces" alt="Small Space Hacks"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-1">
+                    <span class="text-xs font-bold text-[#eb595f] uppercase tracking-wide mb-1 block">Tips &
+                        Tricks</span>
+                    <h4
+                        class="text-xl font-playfair font-bold text-[#2D2D2D] mb-2 group-hover:text-[#eb595f] transition-colors">
+                        <a href="#">Big Style for Small Spaces: 5 Layout Hacks</a>
+                    </h4>
+                    <p class="text-gray-500 text-sm line-clamp-3 mb-4">
+                        maximizing functionality without sacrificing aesthetics in studio apartments and compact urban
+                        homes.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="flex flex-col group">
+                <div class="overflow-hidden rounded-lg mb-4 h-60 bg-gray-100">
+                    <img src="https://placehold.co/600x400/e2e8f0/475569?text=Lighting+Guide" alt="Lighting Guide"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-1">
+                    <span class="text-xs font-bold text-[#eb595f] uppercase tracking-wide mb-1 block">Decor</span>
+                    <h4
+                        class="text-xl font-playfair font-bold text-[#2D2D2D] mb-2 group-hover:text-[#eb595f] transition-colors">
+                        <a href="#">The Art of Layered Lighting</a>
+                    </h4>
+                    <p class="text-gray-500 text-sm line-clamp-3 mb-4">
+                        Understanding ambient, task, and accent lighting to set the perfect mood for every room in your
+                        house.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- Newsletter Signup -->
+    <div class="bg-[#2D2D2D] text-white py-16 mt-12">
+        <div class="container-custom mx-auto px-4 text-center">
+            <h3 class="text-2xl font-playfair font-bold mb-4">Subscribe to our Magazine</h3>
+            <p class="text-gray-400 mb-8 max-w-md mx-auto">Get the best design tips and trends delivered straight to
+                your inbox.</p>
+            <form class="flex flex-col sm:flex-row justify-center gap-4 max-w-lg mx-auto">
+                <input type="email" placeholder="Your email address"
+                    class="px-6 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#eb595f] flex-1">
+                <button type="submit"
+                    class="bg-[#eb595f] text-white px-8 py-3 rounded-full font-bold hover:bg-[#d44d53] transition-colors">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer (Injected via main.js) -->
+    <div id="footer-placeholder"></div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

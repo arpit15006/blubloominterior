@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Blubloom Interiors</title>
+    <meta name="description"
+        content="Explore our portfolio of stunning interior design projects. From modern living rooms to luxury villas.">
+    <link rel="stylesheet" href="/src/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-body text-gray-800 antialiased bg-gray-50 selection:bg-[#eb595f] selection:text-white pb-16">
+
+    <!-- Header (Injected via main.js) -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <div class="relative bg-[#2D2D2D] text-white py-24">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <!-- Re-using existing hero or just a dark pattern for now -->
+            <img src="/images/hero.png" alt="Projects Hero" class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="container-custom mx-auto relative z-20 text-center">
+            <!-- Breadcrumbs -->
+            <nav class="flex justify-center mb-6" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3 text-sm font-medium text-gray-300">
+                    <li class="inline-flex items-center">
+                        <a href="/" class="hover:text-white transition-colors">Home</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <span class="mx-2">/</span>
+                            <span class="text-white">Projects</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+
+            <h1 class="text-4xl md:text-5xl font-playfair font-bold mb-4 !text-white drop-shadow-md">Our Masterpieces
+            </h1>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto font-light !text-gray-100 drop-shadow">
+                A curated collection of homes we've transformed into sanctuaries of style and comfort.
+            </p>
+        </div>
+    </div>
+
+    <!-- Filter/Tabs (Visual Only for now) -->
+    <div class="container-custom mx-auto py-12">
+        <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-12">
+            <button
+                class="px-6 py-2 rounded-full bg-[#eb595f] text-white font-medium text-sm hover:shadow-lg transition-all">All
+                Projects</button>
+            <button
+                class="px-6 py-2 rounded-full bg-white text-gray-600 border border-gray-200 font-medium text-sm hover:border-[#eb595f] hover:text-[#eb595f] transition-all">Residential</button>
+            <button
+                class="px-6 py-2 rounded-full bg-white text-gray-600 border border-gray-200 font-medium text-sm hover:border-[#eb595f] hover:text-[#eb595f] transition-all">Commercial</button>
+            <button
+                class="px-6 py-2 rounded-full bg-white text-gray-600 border border-gray-200 font-medium text-sm hover:border-[#eb595f] hover:text-[#eb595f] transition-all">Renovations</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+
+            <!-- Project 1 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl shadow-sm aspect-[4/3] mb-4">
+                    <img src="/images/project-modern.png" alt="Modern Minimalist Home"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium uppercase tracking-wider text-sm">View Project</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3
+                            class="text-2xl font-playfair font-bold text-[#2D2D2D] group-hover:text-[#eb595f] transition-colors">
+                            The Serene Abode</h3>
+                        <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Modern</span>
+                    </div>
+                    <p class="text-gray-500 text-sm line-clamp-2">A minimalist masterpiece in downtown, featuring clean
+                        lines, neutral palettes, and open spaces.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl shadow-sm aspect-[4/3] mb-4">
+                    <div
+                        class="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center text-gray-400">
+                        <span>Loading Image...</span>
+                    </div>
+                    <img src="https://placehold.co/800x600/e2e8f0/475569?text=Nordic+Charm" alt="Scandinavian Apartment"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium uppercase tracking-wider text-sm">View Project</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3
+                            class="text-2xl font-playfair font-bold text-[#2D2D2D] group-hover:text-[#eb595f] transition-colors">
+                            Nordic Charm</h3>
+                        <span
+                            class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Scandinavian</span>
+                    </div>
+                    <p class="text-gray-500 text-sm line-clamp-2">Warm wood textures meets cool whites in this cozy
+                        Scandinavian-inspired apartment renovation.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl shadow-sm aspect-[4/3] mb-4">
+                    <div
+                        class="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center text-gray-400">
+                        <span>Loading Image...</span>
+                    </div>
+                    <img src="https://placehold.co/800x600/e2e8f0/475569?text=Luxury+Villa" alt="Opulent Villa"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium uppercase tracking-wider text-sm">View Project</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3
+                            class="text-2xl font-playfair font-bold text-[#2D2D2D] group-hover:text-[#eb595f] transition-colors">
+                            Gilded Luxury</h3>
+                        <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Luxury</span>
+                    </div>
+                    <p class="text-gray-500 text-sm line-clamp-2">A high-end villa design focusing on grand scale,
+                        premium materials like marble and gold, and exquisite detailing.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl shadow-sm aspect-[4/3] mb-4">
+                    <div
+                        class="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center text-gray-400">
+                        <span>Loading Image...</span>
+                    </div>
+                    <img src="https://placehold.co/800x600/e2e8f0/475569?text=Rustic+Retreat" alt="Rustic Cottage"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium uppercase tracking-wider text-sm">View Project</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3
+                            class="text-2xl font-playfair font-bold text-[#2D2D2D] group-hover:text-[#eb595f] transition-colors">
+                            Rustic Retreat</h3>
+                        <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Rustic</span>
+                    </div>
+                    <p class="text-gray-500 text-sm line-clamp-2">Embracing natural imperfections with stone walls,
+                        exposed beams, and vintage furnishings for a cozy getaway.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer (Injected via main.js) -->
+    <div id="footer-placeholder"></div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

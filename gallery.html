@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Gallery | Blubloom Interiors</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <div id="header-placeholder"></div>
+
+    <main class="pt-24 min-h-screen">
+        <div class="container-custom pt-8 pb-16">
+            <!-- Breadcrumb -->
+            <nav class="flex mb-8 text-xs text-gray-500 font-medium tracking-wide">
+                <a href="/" class="hover:text-[#eb595f] transition-colors">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-gray-900">Design Ideas</span>
+            </nav>
+
+            <!-- Header Section -->
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-1 h-8 bg-[#eb595f]"></div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-[#2D2D2D] font-playfair">Home Interior Design</h1>
+                </div>
+                <p class="text-gray-600 max-w-4xl text-sm leading-relaxed mb-2">
+                    We bring you carefully-curated interior design ideas, to give your home a brand new look. Explore
+                    exclusive interior designs and trends that are every bit inspirational as they are practical. Our
+                    team of expert designers has put together a collection of the best home interior designs for you.
+                </p>
+                <div class="relative inline-block group">
+                    <button class="text-[#eb595f] text-sm font-semibold flex items-center gap-1 hover:underline">
+                        Read More
+                        <svg class="w-3 h-3 group-hover:rotate-180 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown Content (Hidden) -->
+                    <div
+                        class="hidden group-focus-within:block absolute top-full left-0 w-64 p-4 bg-white shadow-lg border border-gray-100 rounded-lg z-10 text-xs text-gray-500">
+                        Discover varied styles from modern to traditional, minimalist to eclectic.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: Kitchen -->
+                <div class="group cursor-pointer">
+                    <div class="rounded-lg overflow-hidden mb-4 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="/images/kitchen.png" alt="Kitchen"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3
+                        class="text-xl font-bold text-gray-800 mb-1 font-playfair group-hover:text-[#eb595f] transition-colors">
+                        Kitchen</h3>
+                    <p class="text-gray-500 text-xs">3066 Designs</p>
+                </div>
+
+                <!-- Card 2: Living Room -->
+                <div class="group cursor-pointer">
+                    <div class="rounded-lg overflow-hidden mb-4 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="/images/hero.png" alt="Living Room"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3
+                        class="text-xl font-bold text-gray-800 mb-1 font-playfair group-hover:text-[#eb595f] transition-colors">
+                        Living room</h3>
+                    <p class="text-gray-500 text-xs">2170 Designs</p>
+                </div>
+
+                <!-- Card 3: Master Bedroom -->
+                <div class="group cursor-pointer">
+                    <div class="rounded-lg overflow-hidden mb-4 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="/images/bedroom.png" alt="Master Bedroom"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3
+                        class="text-xl font-bold text-gray-800 mb-1 font-playfair group-hover:text-[#eb595f] transition-colors">
+                        Master Bedroom</h3>
+                    <p class="text-gray-500 text-xs">3205 Designs</p>
+                </div>
+
+                <!-- Card 4: Wardrobe -->
+                <div class="group cursor-pointer">
+                    <div class="rounded-lg overflow-hidden mb-4 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="/images/wardrobe.png" alt="Wardrobe"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3
+                        class="text-xl font-bold text-gray-800 mb-1 font-playfair group-hover:text-[#eb595f] transition-colors">
+                        Wardrobe</h3>
+                    <p class="text-gray-500 text-xs">1641 Designs</p>
+                </div>
+
+                <!-- Card 5: Dining Room -->
+                <div class="group cursor-pointer">
+                    <div class="rounded-lg overflow-hidden mb-4 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="/images/dining.png" alt="Dining Room"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3
+                        class="text-xl font-bold text-gray-800 mb-1 font-playfair group-hover:text-[#eb595f] transition-colors">
+                        Dining Room</h3>
+                    <p class="text-gray-500 text-xs">1620 Designs</p>
+                </div>
+
+                <!-- Card 6: Kid's Bedroom -->
+                <div class="group cursor-pointer">
+                    <div class="rounded-lg overflow-hidden mb-4 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="/images/kids-bedroom.png" alt="Kid's Bedroom"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <h3
+                        class="text-xl font-bold text-gray-800 mb-1 font-playfair group-hover:text-[#eb595f] transition-colors">
+                        Kid's Bedroom</h3>
+                    <p class="text-gray-500 text-xs">1312 Designs</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
